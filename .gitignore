@@ -1,0 +1,11 @@
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.DS_Store
+._*
+Thumbs.db*
+$RECYCLE.BIN/
+.idea
+players/**/eye-tracking.csv
+players/**/vr-controllers.csv

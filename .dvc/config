@@ -1,0 +1,4 @@
+[core]
+    remote = hci-wuerzburg-server
+['remote "hci-wuerzburg-server"']
+    url = https://downloads.hci.informatik.uni-wuerzburg.de/cschell/who-is-alyx/
