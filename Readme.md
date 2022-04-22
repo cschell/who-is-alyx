@@ -16,11 +16,7 @@ This dataset was created for biometric data research at the [Chair for Human Com
 
 ## Setup
 
-We use [DVC](https://dvc.org) to manage the data. After [installing DVC](https://dvc.org/doc/install), you can download the data after cloning this repository:
-
-```bash
-dvc pull
-```
+You can  download the latest [release from GitHub](https://github.com/cschell/who-is-alyx/releases). If you want to use git, clone this repository and use [DVC](https://dvc.org) to retrieve the CSV files: After [installing DVC](https://dvc.org/doc/install) run `dvc pull` from the command line.
 
 ## Data
 
