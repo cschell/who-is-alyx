@@ -2,15 +2,17 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6472410.svg)](https://doi.org/10.5281/zenodo.6472410)
 
-This dataset contains over 57 hours of motion and eye-tracking data from 37 players of the virtual reality game [“Half-Life: Alyx”](https://www.half-life.com/en/alyx). Each player played the game on two separate days for about 45 minutes using a HTC Vive Pro.
+This dataset contains over 110 hours of motion, eye-tracking and physiological data from 70 players of the virtual reality game [“Half-Life: Alyx”](https://www.half-life.com/en/alyx). Each player played the game on two separate days for about 45 minutes using a HTC Vive Pro.
 
 Features:
 
-- **Motion data**: xyz positions and orientation of the head mounted display and both controllers
+- **Motion data**: xyz positions and orientation of the HTC Vive headset and both controllers
 - **Controller interactions**: buttons touched and pressed
 - **Eye tracking data**: gaze direction, position of pupils, etc.
-- **Screen recordings**: videos of what the player saw through their head mounted display (coming soon)
+- **Screen recordings**: videos of what the players saw through their head mounted display (coming soon)
 - **Demographic data**: age, sex, VR experience and body parameters
+- **Physiological data**: for players 42 to 76 physiological data such as blood volume
+pulse (PPG/BVP), skin conductance and peripheral skin temperature with an Empatica E4 wristband, as well as electrocardiogram data with a Polar H10 chest strap have been collected (coming soon)
 
 This dataset was created for biometric data research at the [Chair for Human Computer Interaction](https://hci.uni-wuerzburg.de/) at the University of Würzburg, Germany.
 
@@ -31,7 +33,7 @@ We collected several data points from each player and recorded them in [sessions
 - `gender`
 - `experience in vr`
 - `already played the game`: we asked each player if they have already played the game before the first session.
-- `total number of sessions`: for some players there is just 1 session, the other 37 players there is 2 sessions.
+- `total number of sessions`: either `1` or `2` sessions (a few players only attended once)
 
 ### Motion Data
 
@@ -63,7 +65,7 @@ There are some known issues with the dataset, please feel free to open an issue 
 
 ### Dropping Framerate
 
-Due to an error in the motion data recording script, the framerate of each recording quickly drops from an initial 60fps to about 10-15 fps. We provide a Python script to interpolate the data from each `vr-controllers.csv` to a constant 15 fps:
+Due to an error in the motion data recording script, the framerate of the recordings from player 1 to 41 quickly drops from an initial 60fps to about 10-15 fps. We provide a Python script to interpolate the data from each `vr-controllers.csv` to a constant 15 fps:
 
 ```bash
 pip install -r requirements.txt # install required python packages (only required once for setup)
@@ -72,34 +74,82 @@ python scripts/interpolate_data_to_constant_15_fps.py # run script, may take a w
 
 ### Notes about Individual Sessions
 
-- subject id: 1
+- player id: 1
     - date: 2021-12-22
-    - No audio in screen recording, as the voice was recorded by accident. This was fixed in post.
-- subject id: 10
+        - no audio in screen recording, as the voice was recorded by accident. This was fixed in post.
+- player id: 10
     - date: 2022-01-17
-    - Eye calibration does not seem to have worked
-- subject id: 19
+        - eye calibration did not work
+- player id: 19
     - date: 2022-01-24
-    - Eye motion recording failed
-        - Constant values were recorded
-        - No combined data file could be created, as the eye motion recording failed
-    - Shorter record time, as the subject felt motion sick
-- subject id: 24
+        - eye motion recording failed
+        - shorter record time, as the player felt motion sick
+- player id: 24
     - date: 2022-02-04
-    - Eye motion recording failed
-        - Constant values were recorded
-        - No combined data file could be created, as the eye motion recording failed
-- subject id: 32
+     - eye motion recording failed
+- player id: 32
     - date: 2022-02-15
-    - Eye tracking recording failed after about 29 Minutes
-        - After that time, constant values were measured
-- subject id: 39
-    - date: 2022-02-18
-    - The last ~2 Minutes of eyetracking data are faulty
-- subject id: 35
+        - eye tracking recording failed after about 29 minutes – after that, constant values were measured
+- player id: 35
     - date: 2022-02-21
-    - The recording was interrupted as the game crashed
-    
+        - the recording was interrupted as the game crashed
+- player id: 39
+    - date: 2022-02-18
+        - the last ~2 minutes of eyetracking data are faulty
+- player id: 42
+    - date: 2022-05-19
+        - not started from the beginning but from the scene in the train
+        - change of difficulty to "easy" mid-game
+    - date: 2022-05-23
+        - controllers left/right switched during the game
+        - eye recording failed after about 15 minutes
+        - total_graph polar-h10 missing
+- player id: 44
+    - date: 2022-05-25
+        - eye motion, voice, body data recording failed
+    - date: 2022-07-05
+        - eye motion recording failed
+- player id: 45
+    - date: 2022-05-25
+        - eye motion recording failed after about 29 minutes
+        - headset was disconnected shortly
+    - date: 2022-06-08
+        - empathica recording failed
+- player id: 49
+    - date: 2022-06-02
+        - empathica recording failed
+- player id: 50
+    - date: 2022-06-08
+        - no recording physiological data
+- player id: 52
+    - date: 2022-06-15
+     - empathica recording failed
+- player id: 62
+    - date: 2022-06-29
+        - empathica recording failed
+- player id: 63
+    - date: 2022-06-29
+        - empathica recording failed
+- player id: 64
+    - date: 2022-06-22
+        - polar-h10 recording failed
+- player id: 65
+    - date: 2022-06-22
+        - polar-h10 recording failed
+    - date: 2022-08-03
+        - polar-h10 recording failed
+- player id: 67
+    - date: 2022-06-28
+        - steamvr crashes after 15min, so there are two csv files for that session
+- player id: 72
+    - date: 2022-07-20
+        - polar-h10 recording failed
+    - date: 2022-08-18
+        - polar-h10 recording failed after 35 min
+- player id: 75
+    - date: 2022-08-18
+        - 14:41:35 - 14:43:30 short break, briefly taken off the HMD
+
 
 ## Contact
 
@@ -122,7 +172,7 @@ We welcome any discussion, ideas and feedback around this dataset. Feel free to 
 All players gave their written consent for their pseudonymized data to be published for research purposes.
 
 <p xmlns:cc="http://creativecommons.org/ns#">
-  This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.hci.uni-wuerzburg.de">Christian Schell, Fabian Sieper, Marc E. Latoschik</a> is
+  This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.hci.uni-wuerzburg.de">Christian Schell, Fabian Sieper, Lukas Schach, Marc E. Latoschik</a> is
   licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0
   <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
   <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
