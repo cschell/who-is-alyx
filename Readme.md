@@ -65,7 +65,9 @@ There are some known issues with the dataset, please feel free to open an issue 
 
 ### Dropping Framerate
 
-Due to an error in the motion data recording script, the framerate of the recordings from player 1 to 41 quickly drops from an initial 60fps to about 10-15 fps. We provide a Python script to interpolate the data from each `vr-controllers.csv` to a constant 15 fps:
+Due to an error in the motion data recording script in the first part of our study, the framerate of the motion recordings from players 1 to 41 drops from an initial 60fps to about 10-15 fps over the course of each session. This issue was fixed starting with player 42.
+
+As a fix, we provide a Python script to interpolate the data from each `vr-controllers.csv` to a constant 15 fps:
 
 ```bash
 pip install -r requirements.txt # install required python packages (only required once for setup)
