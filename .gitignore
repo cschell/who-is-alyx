@@ -9,3 +9,4 @@ $RECYCLE.BIN/
 .idea
 players/**/eye-tracking.csv
 players/**/vr-controllers*.csv
+*.mp4
