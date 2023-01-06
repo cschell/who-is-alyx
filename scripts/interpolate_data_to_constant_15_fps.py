@@ -62,7 +62,7 @@ for csv_path in motion_data_csvs:
     assert not any(interpolated_features.isna().any())
     interpolated_features.index = (interpolated_features.index.total_seconds() * 1000).values.round(3)
 
-    out_path = csv_path.with_stem(csv_path.stem + ".15fps")
+    out_path = csv_path.with_stem(csv_path.stem + f".{TARGET_FPS}fps")
     print(f"interpolated {csv_path} with {TARGET_FPS} fps to {out_path}")
     interpolated_features.to_csv(out_path, index_label=session_data.index.name)
 
