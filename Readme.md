@@ -2,15 +2,17 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6472410.svg)](https://doi.org/10.5281/zenodo.6472410)
 
-This dataset contains over 57 hours of motion and eye-tracking data from 70 players of the virtual reality game [“Half-Life: Alyx”](https://www.half-life.com/en/alyx). Each player played the game on two separate days for about 45 minutes using a HTC Vive Pro.
+This dataset contains over 110 hours of motion, eye-tracking and physiological data from 70 players of the virtual reality game [“Half-Life: Alyx”](https://www.half-life.com/en/alyx). Each player played the game on two separate days for about 45 minutes using a HTC Vive Pro.
 
 Features:
 
-- **Motion data**: xyz positions and orientation of the head mounted display and both controllers
+- **Motion data**: xyz positions and orientation of the HTC Vive headset and both controllers
 - **Controller interactions**: buttons touched and pressed
 - **Eye tracking data**: gaze direction, position of pupils, etc.
-- **Screen recordings**: videos of what the player saw through their head mounted display (coming soon)
+- **Screen recordings**: videos of what the players saw through their head mounted display (coming soon)
 - **Demographic data**: age, sex, VR experience and body parameters
+- **Physiological data**: for players 42 to 76 physiological data such as blood volume
+pulse (PPG/BVP), skin conductance and peripheral skin temperature with an Empatica E4 wristband, as well as electrocardiogram data with a Polar H10 chest strap have been collected (coming soon)
 
 This dataset was created for biometric data research at the [Chair for Human Computer Interaction](https://hci.uni-wuerzburg.de/) at the University of Würzburg, Germany.
 
@@ -31,7 +33,7 @@ We collected several data points from each player and recorded them in [sessions
 - `gender`
 - `experience in vr`
 - `already played the game`: we asked each player if they have already played the game before the first session.
-- `total number of sessions`: for some players there is just 1 session, the other 37 players there is 2 sessions.
+- `total number of sessions`: either `1` or `2` sessions (a few players only attended once)
 
 ### Motion Data
 
