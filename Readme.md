@@ -74,84 +74,79 @@ python scripts/interpolate_data_to_constant_15_fps.py # run script, may take a w
 
 - player id: 1
     - date: 2021-12-22
-    - No audio in screen recording, as the voice was recorded by accident. This was fixed in post.
+        - no audio in screen recording, as the voice was recorded by accident. This was fixed in post.
 - player id: 10
     - date: 2022-01-17
-    - Eye calibration did not work
+        - eye calibration did not work
 - player id: 19
     - date: 2022-01-24
-    - Eye motion recording failed
-    - Shorter record time, as the player felt motion sick
+        - eye motion recording failed
+        - shorter record time, as the player felt motion sick
 - player id: 24
     - date: 2022-02-04
-    - Eye motion recording failed
+     - eye motion recording failed
 - player id: 32
     - date: 2022-02-15
-    - Eye tracking recording failed after about 29 Minutes – after that, constant values were measured
-- player id: 39
-    - date: 2022-02-18
-    - The last ~2 Minutes of eyetracking data are faulty
+        - eye tracking recording failed after about 29 minutes – after that, constant values were measured
 - player id: 35
     - date: 2022-02-21
-    - The recording was interrupted as the game crashed
+        - the recording was interrupted as the game crashed
+- player id: 39
+    - date: 2022-02-18
+        - the last ~2 minutes of eyetracking data are faulty
 - player id: 42
     - date: 2022-05-19
-    - not started from the beginning but from the scene in the train
-	- change of difficulty to "easy" mid-game
-- player id: 42
+        - not started from the beginning but from the scene in the train
+        - change of difficulty to "easy" mid-game
     - date: 2022-05-23
-    - controllers left/right switched during the game
-	- eye recording failed after about 15 minutes
-	- total_graph polar-h10 missing
+        - controllers left/right switched during the game
+        - eye recording failed after about 15 minutes
+        - total_graph polar-h10 missing
 - player id: 44
     - date: 2022-05-25
-    - Eye motion, Voice, Body Data recording failed
+        - eye motion, voice, body data recording failed
+    - date: 2022-07-05
+        - eye motion recording failed
 - player id: 45
     - date: 2022-05-25
-    - eye motion recording failed after about 29 minutes
-	- headset was disconnected shortly
+        - eye motion recording failed after about 29 minutes
+        - headset was disconnected shortly
+    - date: 2022-06-08
+        - empathica recording failed
 - player id: 49
     - date: 2022-06-02
-    - Empathica recording failed
+        - empathica recording failed
 - player id: 50
     - date: 2022-06-08
-    - No recording Body Data
-- player id: 45
-    - date: 2022-06-08
-    - Empathica recording failed
+        - no recording physiological data
 - player id: 52
     - date: 2022-06-15
-    - Empathica recording failed
-- player id: 64
-    - date: 2022-06-22
-    - polar-h10 recording failed
-- player id: 65
-    - date: 2022-06-22
-    - polar-h10 recording failed
-- player id: 67
-    - date: 2022-06-28
-    - SteamVR crashes after 15min, so there are two CSV files for that session
+     - empathica recording failed
 - player id: 62
     - date: 2022-06-29
-    - Empathica recording failed
+        - empathica recording failed
 - player id: 63
     - date: 2022-06-29
-    - Empathica recording failed
-- player id: 44
-    - date: 2022-07-05
-    - Eye motion recording failed
+        - empathica recording failed
+- player id: 64
+    - date: 2022-06-22
+        - polar-h10 recording failed
+- player id: 65
+    - date: 2022-06-22
+        - polar-h10 recording failed
+    - date: 2022-08-03
+        - polar-h10 recording failed
+- player id: 67
+    - date: 2022-06-28
+        - steamvr crashes after 15min, so there are two csv files for that session
 - player id: 72
     - date: 2022-07-20
-    - polar-h10 recording failed
-- player id: 65
-    - date: 2022-08-03
-    - polar-h10 recording failed
+        - polar-h10 recording failed
+    - date: 2022-08-18
+        - polar-h10 recording failed after 35 min
 - player id: 75
     - date: 2022-08-18
-    - 14:41:35 - 14:43:30 short break, briefly taken off the HMD
-- player id: 72
-    - date: 2022-08-18
-    - polar-h10 recording failed after 35 min
+        - 14:41:35 - 14:43:30 short break, briefly taken off the HMD
 
 
 ## Contact
