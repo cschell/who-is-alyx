@@ -1,4 +1,5 @@
 [core]
     remote = hci-wuerzburg-server
+    autostage = true
 ['remote "hci-wuerzburg-server"']
     url = https://downloads.hci.informatik.uni-wuerzburg.de/cschell/who-is-alyx/
