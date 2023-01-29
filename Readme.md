@@ -59,6 +59,11 @@ The data have been recorded with a [Python library](https://github.com/tiansheng
 
 The eye tracking data have been recorded with Unity and [SRanipal](https://forum.vive.com/topic/5642-sranipal-getting-started-steps/). The csv files contain the raw data recording from each session.
 
+### Physiological Data
+The physiological data was recoreder by using two wearable sensory devices:
+- Empatica E4 wristband: 
+- Polar H10 chest strap:
+
 ## Known Issues
 
 There are some known issues with the dataset, please feel free to open an issue or write us if you find anything else.
