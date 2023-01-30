@@ -61,7 +61,7 @@ The eye tracking data have been recorded with Unity and [SRanipal](https://forum
 
 ### Physiological Data
 
-The physiological data was recoreder by using two wearable sensory devices:
+The physiological data was recorded by using two wearable sensory devices:
 - Empatica E4 wristband: 
     - Acceleration (ACC): 32 Hz, (x,y,z) values
     - Electrodermal Activity (EDA): 4 Hz, skin conductance values in micro Siemens unit
