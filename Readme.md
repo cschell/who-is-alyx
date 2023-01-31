@@ -118,9 +118,7 @@ python scripts/interpolate_data_to_constant_15_fps.py # run script, may take a w
         - not started from the beginning but from the scene in the train
         - change of difficulty to "easy" mid-game
     - date: 2022-05-23
-        - controllers left/right switched during the game
         - eye recording failed after about 15 minutes
-        - total_graph polar-h10 missing
 - player id: 44
     - date: 2022-05-25
         - eye motion, voice, physiological data recording failed
