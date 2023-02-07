@@ -40,38 +40,38 @@ player_id,age,height in cm,weight in kg,gender,experience in vr,already played t
 39,22,170,62,female,2 - 5h,false,2
 40,21,169,69,female,3 - 5h,false,2
 41,25,179,82,male,< 2h,false,2
-42,21,160,57,Female,2 - 5h,True,2
-43,26,179,80,Male,< 2h,False,2
-44,22,187,71,Male,> 5h,False,2
-45,25,180,67,Male,< 2h,False,2
-46,19,170,63,Female,2 - 5h,False,2
-47,21,173,70,Female,2 - 5h,False,2
-48,21,193,110,Male,> 5h,False,2
-49,25,180,73,Male,> 5h ,False,2
-50,23,184,82,Female,< 2h,False,2
-51,27,171,85,Male,< 2h,False,2
-52,19,165,60,Female,< 2h,False,2
-53,27,175,74,Male,< 2h,False,2
-54,22,173,79,Female,< 2h,False,1
-55,22,160,54,Female,< 2h,False,2
-56,24,163,58,Female,2 - 5h ,False,2
-57,20,167,52,Female,2 - 5h,False,2
-58,25,185,77,Male,< 2h,False,2
-59,25,190,84,Male,> 5h,False,2
-60,19,181,62,Male,< 2h,False,2
-61,23,163,50,Female,< 2h,False,2
-62,21,165,57,Female,2 - 5h,False,2
-63,19,182,66,Male,< 2h,False,2
-64,20,160,54,Female,< 2h,False,2
-65,20,168,71,Female,2 - 5h,False,1
-66,20,190,67,Male,< 2h,False,2
-67,24,162,76,Female,< 2h,False,2
-68,20,189,74,Male,> 5h,False,2
-69,22,178,63,Male,> 5h,False,2
-70,26,174,77,Male,> 5h,True,2
-71,29,167,61,Female,> 5h,False,2
-72,29,175,132,Female,< 2h,False,2
-73,24,184,122,Male,< 2h,False,2
-74,29,184,80,Male,> 5h,False,2
-75,29,180,64,Female,< 2h,False,2
-76,24,180,70,Male,< 2h,False,2
+42,21,160,57,female,2 - 5h,true,2
+43,26,179,80,male,< 2h,false,2
+44,22,187,71,male,> 5h,false,2
+45,25,180,67,male,< 2h,false,2
+46,19,170,63,female,2 - 5h,false,2
+47,21,173,70,female,2 - 5h,false,2
+48,21,193,110,male,> 5h,false,2
+49,25,180,73,male,> 5h ,false,2
+50,23,184,82,female,< 2h,false,2
+51,27,171,85,male,< 2h,false,2
+52,19,165,60,female,< 2h,false,2
+53,27,175,74,male,< 2h,false,2
+54,22,173,79,female,< 2h,false,1
+55,22,160,54,female,< 2h,false,2
+56,24,163,58,female,2 - 5h ,false,2
+57,20,167,52,female,2 - 5h,false,2
+58,25,185,77,male,< 2h,false,2
+59,25,190,84,male,> 5h,false,2
+60,19,181,62,male,< 2h,false,2
+61,23,163,50,female,< 2h,false,2
+62,21,165,57,female,2 - 5h,false,2
+63,19,182,66,male,< 2h,false,2
+64,20,160,54,female,< 2h,false,2
+65,20,168,71,female,2 - 5h,false,1
+66,20,190,67,male,< 2h,false,2
+67,24,162,76,female,< 2h,false,2
+68,20,189,74,male,> 5h,false,2
+69,22,178,63,male,> 5h,false,2
+70,26,174,77,male,> 5h,true,2
+71,29,167,61,female,> 5h,false,2
+72,29,175,132,female,< 2h,false,2
+73,24,184,122,male,< 2h,false,2
+74,29,184,80,male,> 5h,false,2
+75,29,180,64,female,< 2h,false,2
+76,24,180,70,male,< 2h,false,2
