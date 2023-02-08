@@ -63,7 +63,7 @@ player_id,age,height in cm,weight in kg,gender,experience in vr,already played t
 62,21,165,57,female,2 - 5h,false,2
 63,19,182,66,male,< 2h,false,2
 64,20,160,54,female,< 2h,false,2
-65,20,168,71,female,2 - 5h,false,1
+65,20,168,71,female,2 - 5h,false,2
 66,20,190,67,male,< 2h,false,2
 67,24,162,76,female,< 2h,false,2
 68,20,189,74,male,> 5h,false,2
