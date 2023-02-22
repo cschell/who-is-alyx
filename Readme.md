@@ -1,24 +1,36 @@
 # Who is Alyx? – A Virtual Reality Motion and Eye-Tracking Multi-Session Dataset
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6472410.svg)](https://doi.org/10.5281/zenodo.6472410)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7663984.svg)](https://doi.org/10.5281/zenodo.7663984)
 
-This dataset contains over 110 hours of motion, eye-tracking and physiological data from 70 players of the virtual reality game [“Half-Life: Alyx”](https://www.half-life.com/en/alyx). Each player played the game on two separate days for about 45 minutes using a HTC Vive Pro.
+This dataset contains over 110 hours of motion, eye-tracking and physiological data from 71 players of the virtual reality game [“Half-Life: Alyx”](https://www.half-life.com/en/alyx). Each player played the game on two separate days for about 45 minutes using a HTC Vive Pro.
 
 Features:
 
 - **Motion data**: xyz positions and orientation of the HTC Vive headset and both controllers
 - **Controller interactions**: buttons touched and pressed
 - **Eye tracking data**: gaze direction, position of pupils, etc.
-- **Screen recordings**: videos of what the players saw through their head mounted display (coming soon)
+- **Screen recordings**: videos of what the players saw through their head mounted display
 - **Demographic data**: age, sex, VR experience and body parameters
 - **Physiological data**: for players 42 to 76 physiological data such as acceleration, blood volume
-pulse (PPG/BVP), heart rate, inter-beat interval, skin conductance and peripheral and  skin temperature with an Empatica E4 wristband, as well as electrocardiogram data with a Polar H10 chest strap have been collected (coming soon)
+pulse (PPG/BVP), heart rate, inter-beat interval, skin conductance and peripheral and  skin temperature with an Empatica E4 wristband, as well as electrocardiogram data with a Polar H10 chest strap have been collected
+
+The following table provides an overview over how many recordings there are for each device. Note, that 5 players only attended one session.
+
+| Device                   | Sampling Rate | 1 Session | 2 Sessions |
+|--------------------------|---------------|-----------|------------|
+| **HTV Vive Pro (motions)**   | **combined**      | **5**         | **71**         |
+|                          | ~ 15 Hz       | 4         | 37         |
+|                          | 90 Hz         | 1         | 34         |
+| **Eye-tracking**  |               | **8**         | **67**         |
+| **Empatica E4 (wristband)**  |               | **8**         | **27**         |
+| **Polar H10 (chest strap)**  |               | **3**         | **31**         |
+
 
 This dataset was created for biometric data research at the [Chair for Human Computer Interaction](https://hci.uni-wuerzburg.de/) at the University of Würzburg, Germany.
 
 ## Setup
 
-You can  download the latest [release from GitHub](https://github.com/cschell/who-is-alyx/releases). If you want to use git, clone this repository and use [DVC](https://dvc.org) to retrieve the CSV files: After [installing DVC](https://dvc.org/doc/install) run `dvc pull --jobs 5` from the command line.
+You can  download the latest [release from GitHub](https://github.com/cschell/who-is-alyx/releases). If you want to use git, clone this repository and use [DVC](https://dvc.org) to retrieve the CSV files: after [installing DVC](https://dvc.org/doc/install) run `dvc pull --jobs 5` from the command line.
 
 ## Data
 
@@ -175,11 +187,11 @@ We welcome any discussion, ideas and feedback around this dataset. Feel free to 
 
 ```bibtex
 @misc{
-  who_is_alyx_2022,
-  title={Who Is Alyx?},
-  DOI={10.5281/zenodo.6472410},
-  author={Christian Schell and Fabian Sieper and Marc E. Latoschik},
-  year={2022}, month={Apr}
+  who_is_alyx_2023,
+  title={Who Is Alyx?: v2.0},
+  DOI={10.5281/zenodo.7663984},
+  author={Christian Schell and Fabian Sieper and Lukas Schach and Marc E. Latoschik},
+  year={2023}, month={Feb}
 }
 ```
 
@@ -188,7 +200,7 @@ We welcome any discussion, ideas and feedback around this dataset. Feel free to 
 All players gave their written consent for their pseudonymized data to be published for research purposes.
 
 <p xmlns:cc="http://creativecommons.org/ns#">
-  This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.hci.uni-wuerzburg.de">Christian Schell, Fabian Sieper, Lukas Schach, Marc E. Latoschik</a> is
+  This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://hci.uni-wuerzburg.de">Christian Schell, Fabian Sieper, Lukas Schach, Marc E. Latoschik</a> is
   licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0
   <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
   <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
