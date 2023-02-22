@@ -11,8 +11,8 @@ Features:
 - **Eye tracking data**: gaze direction, position of pupils, etc.
 - **Screen recordings**: videos of what the players saw through their head mounted display (coming soon)
 - **Demographic data**: age, sex, VR experience and body parameters
-- **Physiological data**: for players 42 to 76 physiological data such as blood volume
-pulse (PPG/BVP), skin conductance and peripheral skin temperature with an Empatica E4 wristband, as well as electrocardiogram data with a Polar H10 chest strap have been collected (coming soon)
+- **Physiological data**: for players 42 to 76 physiological data such as acceleration, blood volume
+pulse (PPG/BVP), heart rate, inter-beat interval, skin conductance and peripheral and  skin temperature with an Empatica E4 wristband, as well as electrocardiogram data with a Polar H10 chest strap have been collected (coming soon)
 
 This dataset was created for biometric data research at the [Chair for Human Computer Interaction](https://hci.uni-wuerzburg.de/) at the University of Würzburg, Germany.
 
@@ -59,6 +59,21 @@ The data have been recorded with a [Python library](https://github.com/tiansheng
 
 The eye tracking data have been recorded with Unity and [SRanipal](https://forum.vive.com/topic/5642-sranipal-getting-started-steps/). The csv files contain the raw data recording from each session.
 
+### Physiological Data
+
+The physiological data was recorded by using two wearable sensory devices:
+- Empatica E4 wristband: 
+    - `Acceleration (ACC)`: 32 Hz, (x,y,z) values
+    - `Electrodermal Activity (EDA)`: 4 Hz, skin conductance values in micro Siemens unit
+    - `Photoplethysmography (PPG)`: 64 Hz, Blood Volume Pulse values  
+    - `Heart Rate (HR)`: 0.1 Hz, beats per minute values
+    - `Inter-beat interval (IBI)`: 64 Hz, time interval values between individual beats of the heart 
+    - `Peripheral Body Temperature (TEMP)`: 4 Hz, temperature values in Celcius unit
+- Polar H10 chest strap: 
+    - `Acceleration (ACC)`: 200 Hz,  (x,y,z) values
+    - `Electrocardiogram (ECG)`: 130 Hz, data values in millivolt unit
+
+
 ## Known Issues
 
 There are some known issues with the dataset, please feel free to open an issue or write us if you find anything else.
@@ -103,12 +118,10 @@ python scripts/interpolate_data_to_constant_15_fps.py # run script, may take a w
         - not started from the beginning but from the scene in the train
         - change of difficulty to "easy" mid-game
     - date: 2022-05-23
-        - controllers left/right switched during the game
         - eye recording failed after about 15 minutes
-        - total_graph polar-h10 missing
 - player id: 44
     - date: 2022-05-25
-        - eye motion, voice, body data recording failed
+        - eye motion, voice, physiological data recording failed
     - date: 2022-07-05
         - eye motion recording failed
 - player id: 45
@@ -116,38 +129,39 @@ python scripts/interpolate_data_to_constant_15_fps.py # run script, may take a w
         - eye motion recording failed after about 29 minutes
         - headset was disconnected shortly
     - date: 2022-06-08
-        - empathica recording failed
+        - empatica data recording failed after about 5 mins
 - player id: 49
     - date: 2022-06-02
-        - empathica recording failed
+        - empatica recording failed after about 5 mins
 - player id: 50
     - date: 2022-06-08
         - no recording physiological data
 - player id: 52
     - date: 2022-06-15
-     - empathica recording failed
+     - empatica recording failed after about 2 minutes
 - player id: 62
     - date: 2022-06-29
-        - empathica recording failed
+        - empatica recording failed after about 4 mins
 - player id: 63
     - date: 2022-06-29
-        - empathica recording failed
+        - empatica recording failed
 - player id: 64
     - date: 2022-06-22
-        - polar-h10 recording failed
+        - polar-h10 recording failed after about 15 mins
 - player id: 65
     - date: 2022-06-22
         - polar-h10 recording failed
     - date: 2022-08-03
-        - polar-h10 recording failed
+        - polar-h10 recording failed after about 10-11 mins
 - player id: 67
     - date: 2022-06-28
         - steamvr crashes after 15min, so there are two csv files for that session
+        - Empatica recording failed after about 25 mins
 - player id: 72
     - date: 2022-07-20
-        - polar-h10 recording failed
+        - polar-h10 recording failed after about 20 mins
     - date: 2022-08-18
-        - polar-h10 recording failed after 35 min
+        - polar-h10 recording failed after about 44 mins
 - player id: 75
     - date: 2022-08-18
         - 14:41:35 - 14:43:30 short break, briefly taken off the HMD
