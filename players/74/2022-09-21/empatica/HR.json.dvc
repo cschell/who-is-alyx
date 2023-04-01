@@ -1,0 +1,4 @@
+outs:
+- md5: 42bb6ef7d97f19dfbc5156d6fcd4586c
+  size: 3070
+  path: HR.json
