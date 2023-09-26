@@ -1,6 +1,6 @@
 # Who is Alyx? – A Virtual Reality Motion and Eye-Tracking Multi-Session Dataset
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7663984.svg)](https://doi.org/10.5281/zenodo.7663984)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6472410.svg)](https://doi.org/10.5281/zenodo.6472410)
 
 This dataset contains over 110 hours of motion, eye-tracking and physiological data from 71 players of the virtual reality game [“Half-Life: Alyx”](https://www.half-life.com/en/alyx). Each player played the game on two separate days for about 45 minutes using a HTC Vive Pro.
 
