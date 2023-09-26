@@ -28,6 +28,14 @@ The following table provides an overview over how many recordings there are for 
 
 This dataset was created for biometric data research at the [Chair for Human Computer Interaction](https://hci.uni-wuerzburg.de/) at the University of Würzburg, Germany.
 
+## Research
+
+This dataset has been created for academic research and is used in the following publications:
+
+1. ["Comparison of Data Encodings and Machine Learning Architectures for User Identification on Arbitrary Motion Sequences"](https://ieeexplore.ieee.org/document/10024474), 2022, C. Rack, A. Hotho and M. E. Latoschik, IEEE AIVR
+2. ["Who Is Alyx? A new Behavioral Biometric Dataset for User Identification in XR"](https://arxiv.org/abs/2308.03788), 2023, C. Rack, T.  Fernando, M. Yalcin, A. Hotho, and M. E. Latoschik, *arXiv e-prints*
+3. ["Extensible Motion-based Identification of XR Users using Non-Specific Motion Data"](https://arxiv.org/abs/2302.07517), 2023, C. Rack, K. Kobs, T. Fernando, A. Hotho, M. E. Latoschik, *arXiv e-prints*
+
 ## Setup
 
 You can  download the latest [release from GitHub](https://github.com/cschell/who-is-alyx/releases). If you want to use git, clone this repository and use [DVC](https://dvc.org) to retrieve the CSV files: after [installing DVC](https://dvc.org/doc/install) run `dvc pull --jobs 5` from the command line.
@@ -66,6 +74,8 @@ The data have been recorded with a [Python library](https://github.com/tiansheng
     - `right_controller_trackpad_<x/y>`: unused
     - `right_controller_trigger`: grab/shoot/interact
     - `<left/right>_controller_ul_button_<pressed/touched>`: controller button state as received from OpenVR ([doc](https://github.com/ValveSoftware/openvr/wiki/IVRSystem::GetControllerState)); each bit represents a button; this is redundant information, since its information is already decoded to the other columns. However, we leave it for verification purposes.
+
+If you are working with tracking data, you might appreciate our ["Motion Learning Toolbox"](https://github.com/cschell/Motion-Learning-Toolbox), a Python library that provides our methods to clean and preprocess tracking data.
 
 ### Eye Tracking Data
 
