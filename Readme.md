@@ -32,9 +32,8 @@ This dataset was created for biometric data research at the [Chair for Human Com
 
 This dataset has been created for academic research and is used in the following publications:
 
-1. ["Comparison of Data Encodings and Machine Learning Architectures for User Identification on Arbitrary Motion Sequences"](https://ieeexplore.ieee.org/document/10024474), 2022, C. Rack, A. Hotho and M. E. Latoschik, IEEE AIVR
-2. ["Who Is Alyx? A new Behavioral Biometric Dataset for User Identification in XR"](https://arxiv.org/abs/2308.03788), 2023, C. Rack, T.  Fernando, M. Yalcin, A. Hotho, and M. E. Latoschik, *arXiv e-prints*
-3. ["Extensible Motion-based Identification of XR Users using Non-Specific Motion Data"](https://arxiv.org/abs/2302.07517), 2023, C. Rack, K. Kobs, T. Fernando, A. Hotho, M. E. Latoschik, *arXiv e-prints*
+1. ["Who Is Alyx? A new Behavioral Biometric Dataset for User Identification in XR"](https://arxiv.org/abs/2308.03788), 2023, C. Rack, T.  Fernando, M. Yalcin, A. Hotho, and M. E. Latoschik, *arXiv e-prints*
+2. ["Extensible Motion-based Identification of XR Users using Non-Specific Motion Data"](https://arxiv.org/abs/2302.07517), 2023, C. Rack, K. Kobs, T. Fernando, A. Hotho, M. E. Latoschik, *arXiv e-prints*
 
 ## Setup
 
