@@ -32,7 +32,7 @@ This dataset was created for biometric data research at the [Chair for Human Com
 
 This dataset has been created for academic research and is used in the following publications:
 
-1. ["Who Is Alyx? A new Behavioral Biometric Dataset for User Identification in XR"](https://arxiv.org/abs/2308.03788), 2023, C. Rack, T.  Fernando, M. Yalcin, A. Hotho, and M. E. Latoschik, *arXiv e-prints*
+1. ["Who Is Alyx? A new Behavioral Biometric Dataset for User Identification in XR"](https://www.frontiersin.org/articles/10.3389/frvir.2023.1272234), 2023, C. Rack, T.  Fernando, M. Yalcin, A. Hotho, and M. E. Latoschik, *arXiv e-prints*
 2. ["Extensible Motion-based Identification of XR Users using Non-Specific Motion Data"](https://arxiv.org/abs/2302.07517), 2023, C. Rack, K. Kobs, T. Fernando, A. Hotho, M. E. Latoschik, *arXiv e-prints*
 
 ## Setup
@@ -190,17 +190,18 @@ python scripts/interpolate_data_to_constant_15_fps.py # run script, may take a w
 
 ## Contact
 
-We welcome any discussion, ideas and feedback around this dataset. Feel free to either open an issue on GitHub or directly contact [Christian Schell](mailto:christian.schell@uni-wuerzburg.de).
+We welcome any discussion, ideas and feedback around this dataset. Feel free to either open an issue on GitHub or directly contact [Christian Rack](mailto:christian.rack@uni-wuerzburg.de).
 
 ## Cite
 
 ```bibtex
-@misc{
-  who_is_alyx_2023,
-  title={Who Is Alyx?: v2.0},
-  DOI={10.5281/zenodo.7663984},
-  author={Christian Schell and Fabian Sieper and Lukas Schach and Marc E. Latoschik},
-  year={2023}, month={Feb}
+@article{10.3389/frvir.2023.1272234,
+	author = {Rack, Christian and Fernando, Tamara and Yalcin, Murat and Hotho, Andreas and Latoschik, Marc Erich},
+    doi={10.3389/frvir.2023.1272234},
+	journal = {Frontiers in Virtual Reality},
+	title = {Who is Alyx? A new behavioral biometric dataset for user identification in XR},
+	volume = {4},
+	year = {2023}
 }
 ```
 
@@ -209,7 +210,7 @@ We welcome any discussion, ideas and feedback around this dataset. Feel free to 
 All players gave their written consent for their pseudonymized data to be published for research purposes.
 
 <p xmlns:cc="http://creativecommons.org/ns#">
-  This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://hci.uni-wuerzburg.de">Christian Schell, Fabian Sieper, Lukas Schach, Marc E. Latoschik</a> is
+  This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://hci.uni-wuerzburg.de">Christian Rack, Fabian Sieper, Lukas Schach, Murat Yalcin, Marc E. Latoschik</a> is
   licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0
   <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
   <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
