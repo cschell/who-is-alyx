@@ -1,0 +1,73 @@
+cff-version: 1.2.0
+title: >-
+  Who is Alyx? – A Virtual Reality Motion and Eye-Tracking
+  Multi-Session Dataset
+message: >-
+  If you use this dataset, please cite both the article from
+  preferred-citation and the dataset itself.
+type: dataset
+authors:
+  - family-names: Rack
+    orcid: "https://orcid.org/0000-0002-0022-0711"
+    given-names: Christian
+  - family-names: Sieper
+    given-names: Fabian
+  - family-names: Schach
+    given-names: Lukas
+  - family-names: Latoschik
+    given-names: Marc Erich
+doi: 10.5281/zenodo.8379914
+repository-code: "https://github.com/cschell/who-is-alyx"
+abstract: >-
+  This dataset contains over 110 hours of motion,
+  eye-tracking and physiological data from 71 players of the
+  virtual reality game “Half-Life: Alyx”. Each player played
+  the game on two separate days for about 45 minutes using a
+  HTC Vive Pro.
+keywords:
+  - dataset
+  - motion data
+  - virtual reality
+  - eye tracking
+  - physiological data
+license: CC-BY-NC-SA-4.0
+date-released: "2022-04-21"
+references:
+  - type: journal-paper
+    authors:
+      - family-names: Rack
+        orcid: "https://orcid.org/0000-0002-0022-0711"
+        given-names: Christian
+      - family-names: Fernando
+        given-names: Tamara
+      - family-names: Yalcin
+        given-names: Murat
+      - family-names: Hotho
+        given-names: Andreas
+      - family-names: Latoschik
+        given-names: Marc Erich
+    title: >-
+      Who is Alyx? A new behavioral biometric dataset for user identification in
+      XR
+    journal: Frontiers in Virtual Reality
+    volume: 4
+    year: 2023
+    url: "https://www.frontiersin.org/articles/10.3389/frvir.2023.1272234"
+    doi: 10.3389/frvir.2023.1272234
+    abstract: >-
+      Introduction: This paper addresses the need for reliable user identification
+      in Extended Reality (XR), focusing on the scarcity of public datasets in
+      this area. Methods: We present a new dataset collected from 71 users who
+      played the game 'Half-Life: Alyx' on an HTC Vive Pro for 45 min across two
+      separate sessions. The dataset includes motion and eye-tracking data, along
+      with physiological data from a subset of 31 users. Benchmark performance is
+      established using two state-of-the-art deep learning architectures,
+      Convolutional Neural Networks (CNN) and Gated Recurrent Units (GRU).
+      Results: The best model achieved a mean accuracy of 95% for user
+      identification within 2 min when trained on the first session and tested on
+      the second. Discussion: The dataset is freely available and serves as a
+      resource for future research in XR user identification, thereby addressing a
+      significant gap in the field. Its release aims to facilitate advancements in
+      user identification methods and promote reproducibility in XR research.
+    license: CC-BY-4.0
+    date-released: "2023-11-10"
