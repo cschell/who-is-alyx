@@ -1,7 +1,5 @@
 # Who is Alyx? – A Virtual Reality Motion and Eye-Tracking Multi-Session Dataset
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6472410.svg)](https://doi.org/10.5281/zenodo.6472410)
-
 This dataset contains over 110 hours of motion, eye-tracking and physiological data from 71 players of the virtual reality game [“Half-Life: Alyx”](https://www.half-life.com/en/alyx). Each player played the game on two separate days for about 45 minutes using a HTC Vive Pro.
 
 Features:
@@ -60,7 +58,7 @@ The data have been recorded with a [Python library](https://github.com/tiansheng
 
 - `timestamp`: recording time of each frame.
 - `delta_time_ms`: time passed since recording start, in milliseconds.
-- `<hmd/left_controller/right_controller>_pos_<x/y/z>`: x, y or z position of the respective controller; the y-axis points upwards (Unity default).
+- `<hmd/left_controller/right_controller>_pos_<x/y/z>`: x, y or z position of the respective controller (in centimeters).
 - `<hmd/left_controller/right_controller>_rot_<x/y/z/w>`: quaternion of the respective controller.
 - controller buttons pressed - the mapping of the controller buttons can be found in [the Unity documentation](https://docs.unity3d.com/2018.4/Documentation/Manual/OpenVRControllers.html)
     - `left_controller_grip_button`: open menu
@@ -75,6 +73,8 @@ The data have been recorded with a [Python library](https://github.com/tiansheng
     - `<left/right>_controller_ul_button_<pressed/touched>`: controller button state as received from OpenVR ([doc](https://github.com/ValveSoftware/openvr/wiki/IVRSystem::GetControllerState)); each bit represents a button; this is redundant information, since its information is already decoded to the other columns. However, we leave it for verification purposes.
 
 If you are working with tracking data, you might appreciate our ["Motion Learning Toolbox"](https://github.com/cschell/Motion-Learning-Toolbox), a Python library that provides our methods to clean and preprocess tracking data.
+
+The data have been recorded using Steam OpenVR, so the axes represent the following directions: X: right; Y: up; Z: Forward. If you want to align the data with another dataset that has been recorded with Unity, you have to transform the system from right- to left handed by flipping the sign of all columns ending on `*_z` and `*_w`.
 
 ### Eye Tracking Data
 
