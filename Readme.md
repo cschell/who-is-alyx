@@ -88,7 +88,7 @@ The physiological data was recorded by using two wearable sensory devices:
     - `Acceleration (ACC)`: 32 Hz, (x,y,z) values
     - `Electrodermal Activity (EDA)`: 4 Hz, skin conductance values in micro Siemens unit
     - `Photoplethysmography (PPG)`: 64 Hz, Blood Volume Pulse values  
-    - `Heart Rate (HR)`: 0.1 Hz, beats per minute values
+    - `Heart Rate (HR)`: 1 Hz, beats per minute values
     - `Inter-beat interval (IBI)`: 64 Hz, time interval values between individual beats of the heart 
     - `Peripheral Body Temperature (TEMP)`: 4 Hz, temperature values in Celcius unit
 - Polar H10 chest strap: 
