@@ -54,7 +54,7 @@ We collected several data points from each player and recorded them in [sessions
 
 ### Motion Data
 
-The data have been recorded with a [Python library](https://github.com/tianshengs/SteamVR_Tracking) using [OpenVR](https://github.com/ValveSoftware/openvr) with an average framerate of 15 fps. The csv files contain the raw data recording from each session.
+The data have been recorded with a [Python library](https://github.com/tianshengs/SteamVR_Tracking) using [OpenVR](https://github.com/ValveSoftware/openvr). The csv files contain the raw data recording from each session.
 
 - `timestamp`: recording time of each frame.
 - `delta_time_ms`: time passed since recording start, in milliseconds.
@@ -72,9 +72,10 @@ The data have been recorded with a [Python library](https://github.com/tiansheng
     - `right_controller_trigger`: grab/shoot/interact
     - `<left/right>_controller_ul_button_<pressed/touched>`: controller button state as received from OpenVR ([doc](https://github.com/ValveSoftware/openvr/wiki/IVRSystem::GetControllerState)); each bit represents a button; this is redundant information, since its information is already decoded to the other columns. However, we leave it for verification purposes.
 
-If you are working with tracking data, you might appreciate our ["Motion Learning Toolbox"](https://github.com/cschell/Motion-Learning-Toolbox), a Python library that provides our methods to clean and preprocess tracking data.
 
 The data have been recorded using Steam OpenVR, so the axes represent the following directions: X: right; Y: up; Z: Forward. If you want to align the data with another dataset that has been recorded with Unity, you have to transform the system from right- to left handed by flipping the sign of all columns ending on `*_z` and `*_w`.
+
+If you are working with tracking data, you might appreciate our ["Motion Learning Toolbox"](https://github.com/cschell/Motion-Learning-Toolbox), a Python library that provides our methods to clean and preprocess tracking data.
 
 ### Eye Tracking Data
 
@@ -194,6 +195,8 @@ We welcome any discussion, ideas and feedback around this dataset. Feel free to 
 
 ## Cite
 
+This dataset has been introduced in the following article, so in most cases you probably want to use the following reference:
+
 ```bibtex
 @article{10.3389/frvir.2023.1272234,
 	author = {Rack, Christian and Fernando, Tamara and Yalcin, Murat and Hotho, Andreas and Latoschik, Marc Erich},
@@ -204,6 +207,22 @@ We welcome any discussion, ideas and feedback around this dataset. Feel free to 
 	year = {2023}
 }
 ```
+
+The citation above is the preferred reference. Should you, however, require a reference for this specific repository, you can use this Zenodo reference:
+
+```bibtex
+@dataset{christian_rack_2023_8379914,
+	author = {Christian Rack and Fabian Sieper and Lukas Schach and Murat Yalcin and Marc E. Latoschik},
+	doi = {10.5281/zenodo.8379914},
+	month = sep,
+	publisher = {Zenodo},
+	title = {cschell/who-is-alyx: v2.1},
+	url = {https://doi.org/10.5281/zenodo.8379914},
+	version = {v2.1},
+	year = 2023,}
+```
+
+
 
 ## License
 
