@@ -36,7 +36,7 @@ This dataset has been created for academic research and is used in the following
 
 ### Related Repositories
 
-<sup>*</sup>You can find the code of the original "Who Is Alyx" Paper in [this repository](https://github.com/cschell/Versatile-XR-User-Identification).
+<sup>*</sup>You can find the code of the original "Who Is Alyx" Paper in [this repository]([https://github.com/cschell/Versatile-XR-User-Identification](https://github.com/cschell/Who-Is-Alyx-Code).
 
 ## Setup
 
