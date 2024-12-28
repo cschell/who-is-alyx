@@ -30,13 +30,13 @@ This dataset was created for biometric data research at the [Chair for Human Com
 
 This dataset has been created for academic research and is used in the following publications:
 
-1. <sub>*</sub>["Who Is Alyx? A new Behavioral Biometric Dataset for User Identification in XR"](https://www.frontiersin.org/articles/10.3389/frvir.2023.1272234), 2023, C. Rack, T.  Fernando, M. Yalcin, A. Hotho, and M. E. Latoschik, *Frontiers in Virtual Reality*
+1. <sup>*</sup>["Who Is Alyx? A new Behavioral Biometric Dataset for User Identification in XR"](https://www.frontiersin.org/articles/10.3389/frvir.2023.1272234), 2023, C. Rack, T.  Fernando, M. Yalcin, A. Hotho, and M. E. Latoschik, *Frontiers in Virtual Reality*
 2. ["Extensible Motion-based Identification of XR Users using Non-Specific Motion Data"](https://arxiv.org/abs/2302.07517), 2023, C. Rack, K. Kobs, T. Fernando, A. Hotho, M. E. Latoschik, *arXiv e-prints*
 3. ["Motion Passwords"](https://dl.acm.org/doi/10.1145/3641825.3687711), 2024, C. Rack, L. Schach, F. Achter, Y. Shehada, J. Lin, M. E. Latoschik
 
 ### Related Repositories
 
-<sup>*</sup>You find the code from the original "Who Is Alyx" Paper in [this repository](https://github.com/cschell/Versatile-XR-User-Identification).
+<sup>*</sup>You can find the code of the original "Who Is Alyx" Paper in [this repository](https://github.com/cschell/Versatile-XR-User-Identification).
 
 ## Setup
 
